@@ -1,0 +1,53 @@
+.ld-btn {
+  padding: 18px 0;
+  font-family: Roboto;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 20px;
+  text-align: center;
+  display: inline-block;
+  border-radius: 6px;
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
+  @include hover {
+    color: #fff;
+    text-decoration: none;
+  }
+  &-xl{
+    padding: 18px 0;
+    width: 100%;
+    max-width: 206px;
+  }
+  &-lg {
+    width: 100%;
+    max-width: 330px;
+  }
+  &-md {
+    max-width: 281px;
+    width: calc((100% - 16px)/2);
+  }
+  &-primary {
+    background: $primary-500;
+  }
+  &-secondary {
+    background: $link-500;
+  }
+  @include responsive("md") {
+    font-size: 16px;
+    line-height: 16px;
+    padding: 10px 0;
+    &-lg {
+      max-width: 240px;
+    }
+    &-XL{
+      font-size: 20px;
+      line-height: 20px;
+      padding: 14px 0;
+      max-width: 190px;
+    }
+    &-md {
+      max-width: 165px;
+    }
+  }
+}

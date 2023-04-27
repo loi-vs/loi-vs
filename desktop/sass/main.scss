@@ -1,0 +1,14 @@
+@import "abstract/variables";
+@import "abstract/mixin";
+@import "abstract/function";
+
+@import "base/_base";
+@import "base/typography";
+
+//component
+@import "component/block";
+@import "component/_btn";
+@import "component/_rules";
+
+//
+@import "page/home.scss";   

@@ -1,0 +1,41 @@
+body {
+    position: relative;
+    overflow-x: hidden;
+    font-family: 'roboto';
+    
+}
+main{
+}
+.box-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.mobile-only {
+    display: none;
+}
+
+@include responsive("md") {
+    .box-container {
+        padding: 0 5px;
+    }
+}   
+@include responsive("md") {
+    .box-container {    
+        padding: 0 10px;
+    }
+    .desk-only {
+        display: none;
+    }
+    .mobile-only {
+        display: block;
+    }
+}
+a{
+    text-decoration: none;
+    cursor: pointer;
+    @include hover{
+        text-decoration: none;
+    }
+}

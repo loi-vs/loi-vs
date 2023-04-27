@@ -1,0 +1,11 @@
+@mixin bgUrl($url, $position: center, $repeat: no-repeat, $cover: cover) {
+//    @debug $url;
+    background: url($url) $repeat $position;
+    background-size: $cover;
+}
+@mixin setBg ($url, $position: center, $repeat: no-repeat, $cover: cover) {
+    //    @debug $url;
+        background: url($url) $repeat $position;
+        background-size: $cover;
+}
+

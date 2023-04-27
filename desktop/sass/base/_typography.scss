@@ -1,0 +1,27 @@
+.typo {
+    position: relative;
+    box-sizing: border-box;
+    display: block;
+    &-heading {
+        font-size: 35px;
+        font-weight: bold;
+        line-height: 1.36;
+    }
+    &-desc {
+        font-size: 18px;
+        font-weight: normal;
+        line-height: 1.56;
+    }
+    @include responsive(md) {
+        &-heading {
+            font-size: 22px;
+            line-height: 30.8px;
+        }
+        &-desc {
+            font-size: 16px;
+            line-height: 24px;
+        }
+    }
+}
+
+// dinh dang cho component
